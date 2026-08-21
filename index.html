@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Kore Tech Solutions — Desarrollo de Software, Diseño y Aseguramiento de Calidad. Soluciones digitales de extremo a extremo.">
+  <meta name="author" content="Kore Tech Solutions">
+
+  <!-- Favicon e Icono de Pestaña -->
+  <link rel="icon" type="image/png" href="assets/img/favicon-png.png">
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="Kore Tech Solutions">
+  <meta property="og:description" content="Desarrollo de Software, Diseño y Aseguramiento de Calidad.">
+  <meta property="og:type" content="website">
+
+  <title>Kore Tech Solutions</title>
+
+  <!-- Google Fonts: Outfit (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navegación principal con enlace destacado a GitHub -->
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="nav__logo" aria-label="Kore Tech Solutions">
+        <img src="assets/img/logo-r.png" alt="Kore Tech Solutions Logo" class="nav__logo-img">
+      </a>
+
+      <!-- Menú hamburguesa CSS-only, sin JavaScript -->
+      <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav__toggle-label" aria-label="Abrir menú de navegación">
+        <span></span>
+      </label>
+
+      <ul class="nav__menu" role="list">
+        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+        <li><a href="#metodologia" class="nav__link">Metodología</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        <li>
+          <a href="https://github.com/johana-navarro" target="_blank" rel="noopener noreferrer" class="nav__github"
+            aria-label="Visitar perfil de GitHub de Johana Navarro">
+            Mi GitHub
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <!-- Hero: presentación principal con animación de entrada -->
+    <section id="inicio" class="hero" aria-label="Presentación principal">
+      <div class="hero__content container">
+        <p class="hero__greeting">Hola, soy</p>
+        <h1 class="hero__name">Johana Micaela Navarro</h1>
+        <p class="hero__title">Desarrollo de Software, Diseño &amp; Aseguramiento de Calidad</p>
+        <p class="hero__subtitle">
+          Soluciones digitales de extremo a extremo: desde la estructuración de APIs
+          y diseño de plataformas, hasta la validación de software y optimización
+          de entornos móviles y web.
+        </p>
+        <div class="hero__cta">
+          <a href="#proyectos" class="btn btn--primary">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn--outline">Contactarme</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- Sobre Mí: perfil profesional con imagen -->
+    <section id="sobre-mi" class="about section" aria-labelledby="titulo-sobre-mi">
+      <div class="container">
+        <h2 id="titulo-sobre-mi" class="section__title">Perfil Versátil e Integral</h2>
+        <div class="about__content">
+          <div class="about__image-wrapper">
+            <img src="assets/img/perfil.jpg"
+              alt="Fotografía de Johana Micaela Navarro, desarrolladora de software y especialista en calidad"
+              class="about__image" width="300" height="300">
+          </div>
+          <div class="about__text">
+            <p>
+              Profesional técnica con enfoque multidisciplinario en el ciclo de vida del software.
+              Combino capacidad de desarrollo de lógica y APIs, criterio de diseño y usabilidad,
+              rigurosidad en pruebas de calidad (QA) y generación de documentación técnica corporativa.
+            </p>
+            <p>
+              Mi valor principal radica en conectar los requerimientos funcionales con soluciones
+              técnicas estables, bien diseñadas y probadas antes de producción.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid de habilidades: 4 columnas en desktop, 1 en mobile -->
+    <section id="habilidades" class="section" aria-labelledby="titulo-habilidades">
+      <div class="container">
+        <h2 id="titulo-habilidades" class="section__title">Habilidades y Stack Técnico</h2>
+        <div class="skills__grid">
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">💻</span>
+            <h3 class="skill-card__title">Desarrollo &amp; Lógica de Negocio</h3>
+            <ul class="skill-card__list" role="list">
+              <li>Integración y consumo de APIs REST (GET, POST, DELETE)</li>
+              <li>Bases de datos y persistencia: WatermelonDB, Postgres, Redis</li>
+              <li>Configuración de entornos locales y contenedores: Docker, Ngrok</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">🔍</span>
+            <h3 class="skill-card__title">Testing &amp; QA</h3>
+            <ul class="skill-card__list" role="list">
+              <li>Diseño y ejecución de casos de prueba integrales (E2E, Frontend &amp; Backend)</li>
+              <li>Validación de servicios con Postman y preservación de integridad de datos</li>
+              <li>Pruebas en dispositivos físicos para aplicaciones móviles</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">🎨</span>
+            <h3 class="skill-card__title">Diseño, CMS &amp; Cloud</h3>
+            <ul class="skill-card__list" role="list">
+              <li>Maquetación y rediseño de plataformas web B2B</li>
+              <li>Gestión de contenidos con Sanity CMS</li>
+              <li>Despliegue y entrega de assets con AWS CloudFront y Amplify</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon" aria-hidden="true">📋</span>
+            <h3 class="skill-card__title">Gestión, Docs &amp; Idiomas</h3>
+            <ul class="skill-card__list" role="list">
+              <li>Generación automatizada de manuales de usuario y diagramas técnicos</li>
+              <li>Flujos ágiles de trabajo con Jira, Trello y Notion</li>
+              <li>Inglés profesional certificado (Nivel B2 Upper-Intermediate)</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards de proyectos con tags tecnológicos destacados -->
+    <section id="proyectos" class="section" aria-labelledby="titulo-proyectos">
+      <div class="container">
+        <h2 id="titulo-proyectos" class="section__title">Proyectos &amp; Experiencia Práctica</h2>
+        <div class="projects__grid">
+
+          <article class="project-card">
+            <span class="project-card__role">QA Integral &amp; Testing Multiplataforma</span>
+            <h3 class="project-card__title">Plataforma de Gestión de Incidentes — Web &amp; Mobile</h3>
+            <p class="project-card__desc">
+              Aseguramiento de calidad completo sobre una plataforma integral que incluye CRM de clientes,
+              gestión y seguimiento de incidentes, asignación de técnicos, geolocalización en mapa,
+              registro fotográfico con cámara nativa y sincronización offline.
+            </p>
+            <p class="project-card__achievements">
+              QA en todas las versiones de la aplicación (web y mobile). Validación de builds nativos en
+              dispositivos físicos, pruebas de persistencia local con WatermelonDB, verificación de flujos
+              de red con Ngrok y servicios Docker (Postgres, Redis, MinIO).
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Expo EAS</span>
+              <span class="tag">Docker</span>
+              <span class="tag">QA E2E</span>
+              <span class="tag">WatermelonDB</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__role">Desarrollo Web &amp; Rediseño Completo</span>
+            <h3 class="project-card__title">Rediseño Integral — <a href="https://www.pentacom.com.ar/" target="_blank"
+                rel="noopener noreferrer" class="accent">pentacom.com.ar</a></h3>
+            <p class="project-card__desc">
+              Rediseño completo del sitio web corporativo de Pentacom, transformando la plataforma
+              original en una experiencia moderna, optimizada y profesional.
+            </p>
+            <p class="project-card__achievements">
+              Reestructuración total del diseño visual y la arquitectura de contenidos. Integración de
+              gestión de assets con Sanity CMS, despliegue con AWS Amplify y CloudFront, y automatización
+              de formularios de contacto con enrutamiento de endpoints.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Web Redesign</span>
+              <span class="tag">Sanity CMS</span>
+              <span class="tag">AWS Amplify</span>
+              <span class="tag">CloudFront</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__role">Quality Assurance &amp; Automatización</span>
+            <h3 class="project-card__title">QA de Plataforma Educativa — Foredu</h3>
+            <p class="project-card__desc">
+              Aseguramiento de calidad continuo y testing integral sobre la plataforma educativa Foredu,
+              abarcando la validación de requerimientos, módulos de gestión de usuarios y cursos,
+              y flujos de negocio end-to-end por sprint.
+            </p>
+            <p class="project-card__achievements">
+              Diseño y ejecución de suites de prueba integrales para Frontend y Backend (APIs REST con Postman
+              y E2E con Cypress). Validación de historias de usuario (HU), reglas de negocio complejas,
+              preservación de integridad de datos y verificación de criterios de aceptación en entregas continuas.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Postman</span>
+              <span class="tag">Cypress</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">E2E &amp; Regresión</span>
+              <span class="tag">QA Integral</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__role">Desarrollo Backend &amp; IA</span>
+            <h3 class="project-card__title">Chatbot RAG con IA Local — LLama 3.2</h3>
+            <p class="project-card__desc">
+              Desarrollo de un asistente conversacional inteligente capaz de responder preguntas
+              basándose en documentos PDF, utilizando modelos de IA ejecutados de forma local.
+            </p>
+            <p class="project-card__achievements">
+              Implementación de arquitectura RAG (Retrieval-Augmented Generation) con FastAPI,
+              LangChain y búsqueda vectorial FAISS. Procesamiento automático de PDFs, generación
+              de embeddings con Nomic y respuestas contextuales con LLama 3.2 vía Ollama.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">LLama 3.2</span>
+              <span class="tag">FAISS</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección personal a elección: metodología de trabajo -->
+    <section id="metodologia" class="section" aria-labelledby="titulo-metodologia">
+      <div class="container">
+        <h2 id="titulo-metodologia" class="section__title">Cómo Aporto Valor en un Proyecto</h2>
+        <div class="methodology__pillars">
+
+          <article class="pillar">
+            <span class="pillar__number" aria-hidden="true">01</span>
+            <h3 class="pillar__title">Visión Holística</h3>
+            <p class="pillar__text">
+              Al entender tanto el desarrollo como el diseño y el testing,
+              prevengo fricciones y desalineaciones entre requerimientos y producto final.
+            </p>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar__number" aria-hidden="true">02</span>
+            <h3 class="pillar__title">Autonomía y Organización</h3>
+            <p class="pillar__text">
+              Metodología clara de gestión orientada a objetivos, con documentación
+              precisa para trabajo remoto y asíncrono.
+            </p>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar__number" aria-hidden="true">03</span>
+            <h3 class="pillar__title">Calidad de Extremo a Extremo</h3>
+            <p class="pillar__text">
+              Cada funcionalidad entregada cuenta con validación técnica,
+              interfaz cuidada y respaldo documental.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto con labels semánticos para accesibilidad -->
+    <section id="contacto" class="section" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <h2 id="titulo-contacto" class="section__title">Hablemos de tu Proyecto</h2>
+        <p class="contact__intro">Disponible para desarrollo, consultoría técnica, diseño o aseguramiento de calidad.
+        </p>
+        <div class="contact__wrapper">
+
+          <form class="contact__form" action="https://formspree.io/f/xyegopqr" method="POST"
+            aria-label="Formulario de contacto">
+            <div class="form__group">
+              <label for="nombre" class="form__label">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Tu nombre" required>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Correo electrónico</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="tu@email.com" required>
+            </div>
+            <div class="form__group">
+              <label for="consulta-tipo" class="form__label">Tipo de consulta</label>
+              <select id="consulta-tipo" name="tipo" class="form__select" required>
+                <option value="" disabled selected>Seleccioná una opción</option>
+                <option value="desarrollo">Desarrollo</option>
+                <option value="testing">Testing</option>
+                <option value="rediseno">Rediseño</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="mensaje" class="form__label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form__textarea" placeholder="Contame sobre tu proyecto..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form__submit">Enviar Consulta</button>
+          </form>
+
+          <div class="contact__info">
+            <a href="https://github.com/johana-navarro" target="_blank" rel="noopener noreferrer" class="contact__link"
+              aria-label="Perfil de GitHub">
+              <span class="contact__link-icon" aria-hidden="true">⟶</span>
+              <div>
+                <span class="contact__link-label">GitHub</span><br>
+                <span class="contact__link-value">github.com/johana-navarro</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/johana-navarro184/" target="_blank" rel="noopener noreferrer"
+              class="contact__link" aria-label="Perfil de LinkedIn">
+              <span class="contact__link-icon" aria-hidden="true">⟶</span>
+              <div>
+                <span class="contact__link-label">LinkedIn</span><br>
+                <span class="contact__link-value">linkedin.com/in/johana-navarro184</span>
+              </div>
+            </a>
+            <div class="contact__link" aria-label="Ubicación">
+              <span class="contact__link-icon" aria-hidden="true">📍</span>
+              <div>
+                <span class="contact__link-label">Ubicación</span><br>
+                <span class="contact__link-value">Córdoba, Argentina (Remoto)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página con enlaces de navegación rápida -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__content">
+      <p class="footer__copy">&copy; 2026 Kore Tech Solutions</p>
+      <nav class="footer__links" aria-label="Enlaces del pie de página">
+        <a href="#inicio" class="footer__link">Inicio</a>
+        <a href="https://github.com/johana-navarro" target="_blank" rel="noopener noreferrer"
+          class="footer__link">GitHub</a>
+        <a href="https://www.linkedin.com/in/johana-navarro184/" target="_blank" rel="noopener noreferrer"
+          class="footer__link">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Cierra el menú móvil al hacer clic en un enlace -->
+  <script>
+    document.querySelectorAll('.nav__link, .nav__github').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('nav-toggle').checked = false;
+      });
+    });
+  </script>
+
+</body>
+
+</html>
